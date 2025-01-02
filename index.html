@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Hand Cricket Game by ATG Atharvotech Gaming - Play Now!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>HAND CRICKET GAME by A.T.G.</h1>
+
+
+    <div class="toss">
+        <div class="toss-child">
+            <h2>TOSS</h2>
+            Even Or Odd
+            <div class="buttons">
+                <button class="even" onclick="choice(0)">Even</button>
+                <button class="odd" onclick="choice(1)">Odd</button>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="start()" class="start">PLAY NOW!</button>
+
+    <div class="keys">
+        <div>Choose your number!</div>
+        <div class="k-childs">
+            <button class="k k1" onclick="tossValue(1)">1</button>
+            <button class="k k2" onclick="tossValue(2)">2</button>
+            <button class="k k3" onclick="tossValue(3)">3</button>
+            <button class="k k4" onclick="tossValue(4)">4</button>
+            <button class="k k5" onclick="tossValue(5)">5</button>
+            <button class="k k6" onclick="tossValue(6)">6</button>
+        </div>
+
+    </div>
+
+    <div class="batorball">
+
+    </div>
+    <div class="main">
+        <div class="result"></div>
+        <div class="score">Score: 0</div>
+        <div class="target"></div>
+        <div class="keyss">
+            <div>Keypad</div>
+            <div class="ks-childs">
+                <button class="ks ks1" onclick="scores(1)">1</button>
+                <button class="ks ks2" onclick="scores(2)">2</button>
+                <button class="ks ks3" onclick="scores(3)">3</button>
+                <button class="ks ks4" onclick="scores(4)">4</button>
+                <button class="ks ks5" onclick="scores(5)">5</button>
+                <button class="ks ks6" onclick="scores(6)">6</button>
+            </div>
+        </div>
+        <div class="uc">
+            <div class="user">
+                <div class="head">user</div>
+                <div class="img"></div>
+            </div>
+            <div class="comp">
+                <div class="head">computer</div>
+                <div class="img"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>More from Atharvotech Gaming</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
