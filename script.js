@@ -211,6 +211,25 @@ function over(c, compRun, userRun) {
         });
     }
 
+    
+    
+    if (c==1 && score >= target) {
+        console.log(batter, " wins")
+        const result = document.querySelector('.result');
+        if (batter == 'user') {
+            result.innerHTML = `You won<br>
+                <button onclick="location.reload()">Restart</button>`
+            win.play();
+        } else if (batter == 'comp') {
+            result.innerHTML = `You Lost<br>
+                <button onclick="location.reload()">Restart</button>`
+            lose.play();
+        }
+        gsap.to(result, {
+            scale: 1,
+            duration: .5,
+        })
+    }
 }
 var ch;
 function start() {
